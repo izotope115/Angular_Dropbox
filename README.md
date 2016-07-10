@@ -26,12 +26,12 @@ Fork this repo and be sure to spin up your favorite web server before running th
 
 If you attempt to upload an asset, it will error. There is no backend a the moment. Feel free to build a node.js/mongoDB backend and submit a pull request.
 
-[Issues List](https://github.com/izotope115/angular_dropbox/issues).
+[Issues List](https://github.com/izotope115/angular_dropbox/issues)
 
 ## Authors
 
 * [Gabe Khofri](https://github.com/izotope115)<br>
-* Authentication portion of the app is based off a great article by [Jason Watmore](cornflourblue): AngularJS JWT Authentication Example & Tutorial
+* Authentication portion of the app is based off a great article by [Jason Watmore](https://github.com/cornflourblue): AngularJS JWT Authentication Example & Tutorial
 http://jasonwatmore.com/post/2016/04/05/AngularJS-JWT-Authentication-Example-Tutorial.aspx
 
 ## Contributing
