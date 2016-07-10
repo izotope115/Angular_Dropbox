@@ -30,8 +30,8 @@ If you attempt to upload an asset, it will error. There is no backend a the mome
 
 ## Authors
 
-* Gabe Khofri (https://github.com/izotope115)<br>
-* Authentication portion of the app is based off a great article by Jason Watmore: AngularJS JWT Authentication Example & Tutorial
+* [Gabe Khofri](https://github.com/izotope115)<br>
+* Authentication portion of the app is based off a great article by [Jason Watmore](cornflourblue): AngularJS JWT Authentication Example & Tutorial
 http://jasonwatmore.com/post/2016/04/05/AngularJS-JWT-Authentication-Example-Tutorial.aspx
 
 ## Contributing
