@@ -1,6 +1,4 @@
-/**
- * Created by gkhofr on 5/25/16.
- */
+
 /*!
  * bootstrap-fileinput v4.3.2
  * http://plugins.krajee.com/file-input
