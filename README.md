@@ -26,7 +26,7 @@ Fork this repo and be sure to spin up your favorite web server before running th
 
 If you attempt to upload an asset, it will error. There is no backend a the moment. Feel free to build a node.js/mongoDB backend and submit a pull request.
 
-[Issues List](Github Issues List URL goes here).
+[Issues List](https://github.com/izotope115/angular_dropbox/issues).
 
 ## Authors
 
