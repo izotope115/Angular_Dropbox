@@ -46,7 +46,7 @@ http://jasonwatmore.com/post/2016/04/05/AngularJS-JWT-Authentication-Example-Tut
 ## License
 
 Your Licensing Information goes here. Example: MIT/X11.
-Copyright (c) <2016>
+Copyright (c) 2016
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
