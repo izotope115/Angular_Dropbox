@@ -1,0 +1,42 @@
+﻿ <label id="searchBox">Search: <input ng-model="searchData"></label>
+
+    <!--header tables-->
+    <table class="box-table-b height-40">
+        <thead>
+        <tr class="gray-background">
+            <th class="width-100px" scope="col"><a class="white-links font-size-20" href="" id="upload-padding">Upload</a></th>
+
+            <th scope="col" ng-class='{"current" : tog == 1}'><a class="white-links font-size-20" href=""  ng-click="sortType = 'folder'; sortReverse = !sortReverse; tog = 1" id="1">
+                <span ng-show="sortType == 'folder' && !sortReverse" class="fa fa-caret-down"></span>
+                <span ng-show="sortType == 'folder' && sortReverse" class="fa fa-caret-up"></span>Folder</a></th>
+
+            <th scope="col" ng-class='{"current" : tog == 2}' ><a class="white-links font-size-20" href="" ng-click="sortType = 'location'; sortReverse = !sortReverse; tog = 2" id="2">
+                <span ng-show="sortType == 'location' && !sortReverse" class="fa fa-caret-down"></span>
+                <span ng-show="sortType == 'location' && sortReverse" class="fa fa-caret-up"></span>Location</a></th>
+
+            <th scope="col" ng-class='{"current" : tog == 3}'><a class="white-links font-size-20" href="" ng-click="sortType = 'created'; sortReverse = !sortReverse; tog = 3" id="3">
+                <span ng-show="sortType == 'created' && !sortReverse" class="fa fa-caret-down"></span>
+                <span ng-show="sortType == 'created' && sortReverse" class="fa fa-caret-up"></span>Created</a></th>
+
+            <th scope="col" ng-class='{"current" : tog == 4}'><a class="white-links font-size-20" href="" ng-click="sortType = 'last_upload'; sortReverse = !sortReverse; tog = 4" id="4">
+                <span ng-show="sortType == 'last_upload' && !sortReverse" class="fa fa-caret-down"></span>
+                <span ng-show="sortType == 'last_upload' && sortReverse" class="fa fa-caret-up"></span>Last Upload</a></th>
+
+            <th scope="col" ng-class='{"current" : tog == 5}'><a class="white-links font-size-20" href="" ng-click="sortType = 'owner'; sortReverse = !sortReverse; tog = 5" id="5">
+                <span ng-show="sortType == 'owner' && !sortReverse" class="fa fa-caret-down"></span>
+                <span ng-show="sortType == 'owner' && sortReverse" class="fa fa-caret-up"></span>Owner</a></th>
+        </tr>
+        </thead>
+    </table><table class="scroll box-table-a">
+    <tbody>
+    <tr class="height-40" ng-repeat="data in dataSet | filter:searchData | orderBy:sortType:sortReverse">
+        <td class="width-100"><a href="" ng-click="select(data)" data-toggle="modal" data-target="#myModal"><img class="center-img" ng-src="{{data.upload}}"/></a></td>
+        <td class="width-600"><a class="margin-left" href="" ng-click="select(data)" data-toggle="modal" data-target="#myModal">{{data.folder}}</a></td>
+        <td class="width-600"><a href="" ng-click="select(data)" data-toggle="modal" data-target="#myModal">{{data.location}}</a></td>
+        <td class="width-600"><a href="" ng-click="select(data)" data-toggle="modal" data-target="#myModal">{{data.created}}</a></td>
+        <td class="width-600"><a href="" ng-click="select(data)" data-toggle="modal" data-target="#myModal">{{data.last_upload}}</a></td>
+        <td class="width-600"><a class="margin-left" href="" ng-click="select(data)" data-toggle="modal" data-target="#myModal">{{data.owner}}</a></td>
+    </tr>
+    </tbody>
+</table>
+

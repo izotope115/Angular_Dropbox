@@ -1,0 +1,65 @@
+<html ng-app="app">
+<head>
+    <title>REVITALIZED Drop Box</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/fileinput.min.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript" src="js/angular.js"></script>
+    <script type="text/javascript" src="js/angular-messages.js"></script>
+    <script type="text/javascript" src="js/angular-ui-router.js"></script>
+    <script type="text/javascript" src="js/ngStorage.min.js"></script>
+
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="app-services/authentication.service.js"></script>
+    <script type="text/javascript" src="home/index.controller.js"></script>
+    <script src="login/index.controller.js"></script>
+
+    <script type="text/javascript" src="js/angular-mocks.js"></script>
+    <script type="text/javascript" src="app-helpers/fake-backend.js"></script>
+
+    <script type="text/javascript" type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="js/fileinput.js"></script>
+</head>
+<body>
+
+<div id="container">
+    <div id="header"> <div ui-view="loginText"></div></div>
+
+    <ui-view></ui-view>
+    <div ui-view="home"></div>
+
+    <!-- Modal/File Uploader. This file uploader wont work inside ng-include unless its placed here -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-lg">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">UPLOAD FILES</h4>
+
+                </div>
+                <div class="modal-body">
+                    <div class="modalPaddingLeft"><i class="fa fa-folder-open"></i><span
+                            class="gray"> {{selected.location}}</span></div>
+                    <div class="modalContentContainer">
+                        <form enctype="multipart/form-data">
+                            <div class="form-group">
+                                <input id="file-4" type="file" class="file" data-upload-url="#" multiple="true">
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
