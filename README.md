@@ -5,9 +5,9 @@
 
 [Demo](https://www.gabrielkhofri.com/dropbox/#/login)
 
-Login: test
+<p>Login: test</p>
 
-Password: test
+<p>Password: test</p>
 
 ## Description
 **AngularJS DropBox Example UI with Authentication**
