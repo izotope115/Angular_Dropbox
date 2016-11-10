@@ -1,7 +1,7 @@
 
 # AngularJS DropBox Example UI with Authentication
 
-By [Gabe Khofri](https://www.gabrielkhofri.com)<br/>
+By [Gabe Khofri](https://www.gabrielkhofri.com)<br/><br/>
 [Demo](https://www.gabrielkhofri.com/dropbox/#/login)<br/>
 
 Login: test<br/>
